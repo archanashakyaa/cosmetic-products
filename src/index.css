@@ -39,9 +39,9 @@
   --space-5xl: 5rem;     /* 80px */
 
   /* Component Spacing */
-  --grid-gap-mobile: 0.5rem;    /* 16px */
-  --grid-gap-tablet: 1rem;      /* 24px */
-  --grid-gap-desktop: 1.5rem;   /* 24px (maintains consistency) */
+  --grid-gap-mobile: 1rem;      /* 16px */
+  --grid-gap-tablet: 1.5rem;    /* 24px */
+  --grid-gap-desktop: 1.5rem;   /* 24px */
   --grid-gap-xl: 2rem;          /* 32px */
 
   /* Padding Standards */
@@ -57,8 +57,8 @@
   --button-padding-desktop: 1rem 2rem;          /* py-4 px-8 */
 
   /* Container */
-  --container-max-width: 1280px;
-  --container-padding: 1rem;
+  --container-max-width: 1200px;
+  --container-padding: 1.5rem;  /* 24px */
 
   /* Border Radius */
   --radius-sm: 0.25rem;
@@ -132,20 +132,6 @@ a {
   padding-right: var(--container-padding);
 }
 
-@media (min-width: 640px) {
-  .container {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
-
 /* Responsive Spacing Utilities */
 .section-py {
   padding-top: var(--space-5xl);
@@ -171,17 +157,7 @@ a {
 .gap-md { gap: var(--space-md); }
 .gap-lg { gap: var(--space-lg); }
 
-.px-mobile { padding-left: 1rem; padding-right: 1rem; }
-.px-tablet { padding-left: 1.5rem; padding-right: 1.5rem; }
-.px-desktop { padding-left: 2rem; padding-right: 2rem; }
-
-@media (min-width: 640px) {
-  .px-mobile { padding-left: 1.5rem; padding-right: 1.5rem; }
-}
-
-@media (min-width: 1024px) {
-  .px-mobile { padding-left: 2rem; padding-right: 2rem; }
-}
+.px-container { padding-left: 1.5rem; padding-right: 1.5rem; }
 
 /* ============================================================================
    CUSTOM SCROLLBAR

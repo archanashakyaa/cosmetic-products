@@ -22,7 +22,7 @@ const About = () => {
 
   return (
     <section id="about" className="py-20 md:py-32 lg:py-40 bg-white-pure">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-6">
         {/* Two-column layout */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Image Side */}
@@ -94,7 +94,7 @@ const About = () => {
 
             <a
               href="#"
-              className="inline-flex items-center gap-3 bg-charcoal text-white-pure px-8 py-4 md:px-10 md:py-5 text-sm font-medium tracking-wide hover:bg-gold transition-colors duration-300 group"
+              className="inline-flex items-center gap-4 bg-charcoal text-white-pure px-8 py-4 md:px-10 md:py-4 text-sm font-medium tracking-wide hover:bg-gold transition-colors duration-300 group"
             >
               Learn Our Story
               <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />

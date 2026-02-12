@@ -8,7 +8,7 @@ const Collections = () => {
 
   return (
     <section id="collections" className="py-20 md:py-32 lg:py-40 bg-cream-dark">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-6">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -37,7 +37,7 @@ const Collections = () => {
           className="relative overflow-hidden rounded-sm mb-12 md:mb-16 group cursor-pointer"
         >
           <img
-            src="https://placehold.co/1400x500/C4B5A5/2C2C2C?text=The+Essentials+Collection"
+            src="/photo/image%20(10).png"
             alt="The Essentials Collection"
             className="w-full h-48 sm:h-56 md:h-72 lg:h-96 object-cover transition-transform duration-700 group-hover:scale-105"
           />
@@ -62,7 +62,7 @@ const Collections = () => {
         </motion.div>
 
         {/* Products Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 xl:gap-10">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-6 xl:gap-8">
           {collectionProducts.map((product, index) => (
             <ProductCard key={product.id} product={product} index={index} />
           ))}

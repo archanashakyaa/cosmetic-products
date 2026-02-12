@@ -8,7 +8,7 @@ const Stories = () => {
 
   return (
     <section id="stories" className="py-20 md:py-32 lg:py-40 bg-cream">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-6">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -80,7 +80,7 @@ const Stories = () => {
                 <span className="text-xs font-medium tracking-[0.2em] uppercase text-gold-light mb-2 block">
                   {featured.category} — {featured.date}
                 </span>
-                <h3 className="font-serif text-2xl md:text-3xl lg:text-4xl font-medium text-white-pure leading-tight mb-3">
+                <h3 className="font-serif text-2xl md:text-3xl lg:text-4xl font-medium text-white-pure leading-tight mb-4">
                   {featured.title}
                 </h3>
                 <span className="inline-flex items-center gap-2 text-sm text-white-pure/80 group-hover:text-gold-light transition-colors">
@@ -109,8 +109,8 @@ const Stories = () => {
                 />
                 <div className="absolute inset-0 bg-charcoal/10 group-hover:bg-charcoal/0 transition-colors duration-500" />
               </div>
-              <div className="mt-3 md:mt-4">
-                <div className="flex items-center gap-3 mb-1.5">
+              <div className="mt-4">
+                <div className="flex items-center gap-4 mb-2">
                   <span className="text-[10px] md:text-xs font-medium tracking-[0.15em] uppercase text-gold">
                     {post.category}
                   </span>
@@ -118,7 +118,7 @@ const Stories = () => {
                     {post.date}
                   </span>
                 </div>
-                <h3 className="font-serif text-base md:text-lg font-medium text-charcoal group-hover:text-gold transition-colors leading-snug">
+                <h3 className="font-serif text-base md:text-lg font-medium text-charcoal group-hover:text-gold transition-colors leading-snug mt-2">
                   {post.title}
                 </h3>
               </div>

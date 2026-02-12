@@ -35,7 +35,7 @@ const Navbar = () => {
             : 'bg-transparent'
         }`}
       >
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-6">
           {/* Mobile/Tablet Header */}
           <div className="flex lg:hidden items-center justify-between h-16 px-4">
             <button
@@ -152,15 +152,15 @@ const Navbar = () => {
 
                 {/* Mobile Extra Links */}
                 <div className="mt-12 space-y-4">
-                  <a href="#" className="flex items-center gap-3 text-charcoal-soft hover:text-charcoal transition-colors">
+                  <a href="#" className="flex items-center gap-4 text-charcoal-soft hover:text-charcoal transition-colors">
                     <Search size={18} />
                     <span className="text-sm tracking-wide">Search</span>
                   </a>
-                  <a href="#" className="flex items-center gap-3 text-charcoal-soft hover:text-charcoal transition-colors">
+                  <a href="#" className="flex items-center gap-4 text-charcoal-soft hover:text-charcoal transition-colors">
                     <Heart size={18} />
                     <span className="text-sm tracking-wide">Wishlist</span>
                   </a>
-                  <a href="#" className="flex items-center gap-3 text-charcoal-soft hover:text-charcoal transition-colors">
+                  <a href="#" className="flex items-center gap-4 text-charcoal-soft hover:text-charcoal transition-colors">
                     <User size={18} />
                     <span className="text-sm tracking-wide">Account</span>
                   </a>

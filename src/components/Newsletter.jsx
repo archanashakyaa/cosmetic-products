@@ -8,40 +8,39 @@ const Newsletter = () => {
       <div className="absolute top-0 left-0 w-64 h-64 bg-gold/5 rounded-full -translate-x-1/2 -translate-y-1/2" />
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-gold/5 rounded-full translate-x-1/3 translate-y-1/3" />
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="container mx-auto px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="max-w-2xl mx-auto text-center"
+          className="max-w-4xl md:max-w-5xl mx-auto text-center flex flex-col items-center"
         >
           <span className="text-xs md:text-sm font-medium tracking-[0.3em] uppercase text-gold mb-4 block">
             Stay Connected
           </span>
-          <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-medium text-white-pure mb-6 md:mb-8">
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-medium text-white-pure mb-6 md:mb-8">
             Join the GlowLab Circle
           </h2>
-          <p className="text-sm md:text-base text-white-pure/60 mb-10 leading-relaxed">
-            Be the first to discover new launches, exclusive offers, and beauty secrets 
-            curated by our experts. Delivered straight to your inbox.
+          <p className="text-sm md:text-base text-white-pure/60 mb-10 leading-relaxed max-w-2xl">
+            Be the first to discover new launches, exclusive offers, and beauty secrets curated by our experts. Delivered straight to your inbox.
           </p>
 
           {/* Email Form */}
           <form
             onSubmit={(e) => e.preventDefault()}
-            className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
+            className="flex flex-col sm:flex-row gap-4 w-full max-w-2xl mx-auto"
           >
             <input
               type="email"
               placeholder="Your email address"
-              className="flex-1 bg-white-pure/10 border border-white-pure/20 text-white-pure placeholder:text-white-pure/40 px-5 py-3 md:py-4 text-sm focus:outline-none focus:border-gold transition-colors"
+              className="w-full sm:flex-1 bg-white-pure/10 border border-white-pure/20 text-white-pure placeholder:text-white-pure/40 px-6 py-4 text-sm focus:outline-none focus:border-gold transition-colors"
             />
             <motion.button
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               type="submit"
-              className="bg-gold text-white-pure px-6 py-3 md:py-4 text-sm font-medium tracking-wide hover:bg-gold-dark transition-colors flex items-center justify-center gap-2 whitespace-nowrap"
+              className="w-full sm:w-auto bg-gold text-white-pure px-6 py-4 text-sm font-medium tracking-wide hover:bg-gold-dark transition-colors flex items-center justify-center gap-2 whitespace-nowrap"
             >
               Subscribe
               <ArrowRight size={16} />

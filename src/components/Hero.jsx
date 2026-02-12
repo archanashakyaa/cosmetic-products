@@ -36,7 +36,7 @@ const Hero = () => {
 
               {/* Content */}
               <div className="absolute inset-0 flex items-end md:items-center pb-20 md:pb-0">
-                <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="container mx-auto px-6">
                   <div className="max-w-xl">
                     <motion.span
                       initial={{ opacity: 0, y: 20 }}
@@ -70,7 +70,7 @@ const Hero = () => {
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.6, delay: 0.3 }}
-                      className="inline-flex items-center gap-3 bg-white-pure/95 text-charcoal px-8 py-4 md:px-10 md:py-5 text-sm md:text-base font-medium tracking-wide hover:bg-gold hover:text-white-pure transition-all duration-400 group"
+                      className="inline-flex items-center gap-4 bg-white-pure/95 text-charcoal px-8 py-4 md:px-10 md:py-4 text-sm md:text-base font-medium tracking-wide hover:bg-gold hover:text-white-pure transition-all duration-400 group"
                     >
                       {slide.cta}
                       <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />

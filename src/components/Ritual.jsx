@@ -11,7 +11,7 @@ const iconMap = {
 const Ritual = () => {
   return (
     <section id="ritual" className="py-20 md:py-32 lg:py-40 bg-cream">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-6">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}

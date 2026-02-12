@@ -27,7 +27,7 @@ const Footer = () => {
   return (
     <footer className="bg-charcoal text-white-pure/70">
       {/* Main Footer */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 lg:py-32">
+      <div className="container mx-auto px-6 py-16 md:py-24 lg:py-32">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12">
           {/* Brand Column */}
           <div className="lg:col-span-2">
@@ -41,15 +41,15 @@ const Footer = () => {
 
             {/* Contact Info */}
             <div className="space-y-4 mb-8">
-              <div className="flex items-center gap-2.5 text-xs">
+              <div className="flex items-center gap-2 text-xs">
                 <MapPin size={14} className="text-gold flex-shrink-0" />
                 <span>456 Beauty Lane, Los Angeles, CA 90028</span>
               </div>
-              <div className="flex items-center gap-2.5 text-xs">
+              <div className="flex items-center gap-2 text-xs">
                 <Phone size={14} className="text-gold flex-shrink-0" />
                 <span>+1 (800) 456-7890</span>
               </div>
-              <div className="flex items-center gap-2.5 text-xs">
+              <div className="flex items-center gap-2 text-xs">
                 <Mail size={14} className="text-gold flex-shrink-0" />
                 <span>hello@glowlab.com</span>
               </div>
@@ -96,7 +96,7 @@ const Footer = () => {
                       transition={{ duration: 0.25 }}
                       className="overflow-hidden"
                     >
-                      <div className="pb-4 px-4 space-y-3">
+                      <div className="pb-4 px-4 space-y-4">
                         {section.links.map((link) => (
                           <a
                             key={link}
@@ -139,7 +139,7 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="border-t border-white-pure/10">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-8">
+        <div className="container mx-auto px-6 py-6 md:py-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-xs text-white-pure/30 text-center md:text-left">
               © 2026 GlowLab. All rights reserved.

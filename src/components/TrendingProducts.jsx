@@ -12,7 +12,7 @@ const TrendingProducts = () => {
 
   return (
     <section id="shop" className="py-20 md:py-32 lg:py-40 bg-white-pure">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-6">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -47,7 +47,7 @@ const TrendingProducts = () => {
             freeMode={true}
             breakpoints={{
               480: { slidesPerView: 1.5, spaceBetween: 16 },
-              640: { slidesPerView: 2.2, spaceBetween: 20 },
+              640: { slidesPerView: 2.2, spaceBetween: 24 },
               768: { slidesPerView: 2.5, spaceBetween: 24 },
             }}
             className="!overflow-visible"
@@ -61,7 +61,7 @@ const TrendingProducts = () => {
         </div>
 
         {/* Desktop: 4-column grid */}
-        <div className="hidden lg:grid grid-cols-4 gap-8 xl:gap-10">
+        <div className="hidden lg:grid grid-cols-4 gap-6 xl:gap-8">
           {trendingProducts.map((product, index) => (
             <ProductCard key={product.id} product={product} index={index} />
           ))}
