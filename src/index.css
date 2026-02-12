@@ -399,3 +399,52 @@ button[class*="hover:"],
     font-size: 16px; /* Prevents zoom on focus in iOS */
   }
 }
+
+/* ============================================================================
+   NEWSLETTER FORM OPTIMIZATION
+   ============================================================================ */
+
+/* Newsletter section centering */
+section[id*="newsletter"],
+section:has(form input[type="email"]) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Newsletter form container */
+form[class*="max-w"] {
+  width: 100%;
+}
+
+/* Better form sizing - reduce max-width for better proportion */
+form.max-w-lg {
+  max-width: 520px;
+}
+
+form.max-w-md {
+  max-width: 450px;
+}
+
+@media (max-width: 768px) {
+  form.max-w-lg,
+  form.max-w-md {
+    max-width: 100%;
+  }
+}
+
+/* Email input refinement */
+input[type="email"] {
+  border-radius: var(--radius-sm);
+}
+
+/* Form layout optimization */
+form.flex {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Newsletter paragraph spacing */
+p[class*="text-white-pure"]:last-child {
+  margin-top: var(--space-sm);
+}

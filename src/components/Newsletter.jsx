@@ -30,18 +30,18 @@ const Newsletter = () => {
           {/* Email Form */}
           <form
             onSubmit={(e) => e.preventDefault()}
-            className="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto"
+            className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
           >
             <input
               type="email"
               placeholder="Your email address"
-              className="flex-1 bg-white-pure/10 border border-white-pure/20 text-white-pure placeholder:text-white-pure/40 px-6 py-4 md:py-5 text-sm focus:outline-none focus:border-gold transition-colors"
+              className="flex-1 bg-white-pure/10 border border-white-pure/20 text-white-pure placeholder:text-white-pure/40 px-5 py-3 md:py-4 text-sm focus:outline-none focus:border-gold transition-colors"
             />
             <motion.button
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               type="submit"
-              className="bg-gold text-white-pure px-8 py-4 md:py-5 text-sm font-medium tracking-wide hover:bg-gold-dark transition-colors flex items-center justify-center gap-2"
+              className="bg-gold text-white-pure px-6 py-3 md:py-4 text-sm font-medium tracking-wide hover:bg-gold-dark transition-colors flex items-center justify-center gap-2 whitespace-nowrap"
             >
               Subscribe
               <ArrowRight size={16} />
