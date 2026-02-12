@@ -81,7 +81,7 @@
    ============================================================================ */
 
 * {
-  margin: 1;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -258,4 +258,144 @@ a {
 .swiper-button-prev::after {
   font-size: 20px;
   font-weight: 600;
+}
+
+/* ============================================================================
+   FORM COMPONENTS & INPUTS
+   ============================================================================ */
+
+/* Email Input Styling */
+input[type="email"],
+input[type="text"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="url"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: all var(--transition-base);
+}
+
+/* Input Focus State - Premium transition */
+input[type="email"]:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(201, 169, 110, 0.1);
+}
+
+/* Dark theme input focus enhancement */
+input.bg-white-pure\\/10:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: var(--color-gold-light);
+}
+
+/* ============================================================================
+   BUTTON COMPONENTS & INTERACTIONS
+   ============================================================================ */
+
+button,
+[type="button"],
+[type="submit"],
+[type="reset"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  border: none;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  transition: all var(--transition-base);
+  border-radius: var(--radius-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Premium Button - Gold with shadow and elevation */
+.bg-gold {
+  position: relative;
+  box-shadow: 0 4px 12px rgba(201, 169, 110, 0.25);
+}
+
+.bg-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(201, 169, 110, 0.35);
+}
+
+.bg-gold:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(201, 169, 110, 0.2);
+}
+
+/* Charcoal Button */
+.bg-charcoal:not([class*="opacity"]) {
+  box-shadow: 0 2px 8px rgba(44, 44, 44, 0.15);
+}
+
+.bg-charcoal:hover:not(:disabled):not([class*="opacity"]) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(44, 44, 44, 0.25);
+}
+
+/* Disabled State */
+button:disabled,
+[type="button"]:disabled,
+[type="submit"]:disabled,
+[type="reset"]:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+/* ============================================================================
+   INTERACTIVE ELEMENT ENHANCEMENTS
+   ============================================================================ */
+
+/* Smooth transitions for all interactive elements */
+a[class*="hover:"],
+button[class*="hover:"],
+[class*="transition-"] {
+  transition: all var(--transition-base);
+}
+
+/* ============================================================================
+   FOCUS & ACCESSIBILITY STATES
+   ============================================================================ */
+
+*:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+}
+
+/* ============================================================================
+   RESPONSIVE MOBILE ENHANCEMENTS
+   ============================================================================ */
+
+/* Improve touch targets on mobile */
+@media (max-width: 640px) {
+  button,
+  [type="button"],
+  [type="submit"],
+  [type="reset"],
+  a[role="button"] {
+    min-height: 48px;
+  }
+
+  input[type="email"],
+  input[type="text"],
+  input[type="password"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="url"],
+  textarea {
+    font-size: 16px; /* Prevents zoom on focus in iOS */
+  }
 }
