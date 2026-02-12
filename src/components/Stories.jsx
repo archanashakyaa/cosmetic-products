@@ -7,7 +7,7 @@ const Stories = () => {
   const others = blogPosts.filter(p => !p.featured);
 
   return (
-    <section id="stories" className="py-16 md:py-24 lg:py-32 bg-cream">
+    <section id="stories" className="py-20 md:py-32 lg:py-40 bg-cream">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div
@@ -15,12 +15,12 @@ const Stories = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-10 md:mb-14 lg:mb-16"
+          className="text-center mb-12 md:mb-16 lg:mb-20"
         >
-          <span className="text-xs md:text-sm font-medium tracking-[0.3em] uppercase text-gold mb-3 block">
+          <span className="text-xs md:text-sm font-medium tracking-[0.3em] uppercase text-gold mb-4 block">
             The Journal
           </span>
-          <h2 className="font-serif text-2xl md:text-3xl lg:text-5xl font-medium text-charcoal mb-4">
+          <h2 className="font-serif text-2xl md:text-3xl lg:text-5xl font-medium text-charcoal mb-6 md:mb-8">
             Beauty Stories
           </h2>
           <p className="text-sm md:text-base text-charcoal-soft max-w-lg mx-auto leading-relaxed">
@@ -29,7 +29,7 @@ const Stories = () => {
         </motion.div>
 
         {/* Mobile: Single Column Stack */}
-        <div className="md:hidden space-y-6">
+        <div className="md:hidden space-y-8">
           {blogPosts.map((post, index) => (
             <motion.article
               key={post.id}
@@ -46,11 +46,11 @@ const Stories = () => {
                   className="w-full h-52 object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal/50 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-4">
+                <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
                   <span className="text-[10px] font-medium tracking-[0.2em] uppercase text-gold-light">
                     {post.category}
                   </span>
-                  <h3 className="font-serif text-lg font-medium text-white-pure mt-1 leading-snug">
+                  <h3 className="font-serif text-lg font-medium text-white-pure mt-2 leading-snug">
                     {post.title}
                   </h3>
                 </div>
@@ -60,7 +60,7 @@ const Stories = () => {
         </div>
 
         {/* Tablet/Desktop: Masonry-like Grid */}
-        <div className="hidden md:grid grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
+        <div className="hidden md:grid grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {/* Featured (large) */}
           {featured && (
             <motion.article

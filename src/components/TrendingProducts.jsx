@@ -11,7 +11,7 @@ const TrendingProducts = () => {
   const trendingProducts = products.slice(0, 4);
 
   return (
-    <section id="shop" className="py-16 md:py-24 lg:py-32 bg-white-pure">
+    <section id="shop" className="py-20 md:py-32 lg:py-40 bg-white-pure">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div
@@ -19,10 +19,10 @@ const TrendingProducts = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.8 }}
-          className="flex flex-col sm:flex-row sm:items-end justify-between mb-10 md:mb-14"
+          className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 md:mb-16"
         >
           <div>
-            <span className="text-xs md:text-sm font-medium tracking-[0.3em] uppercase text-gold mb-3 block">
+            <span className="text-xs md:text-sm font-medium tracking-[0.3em] uppercase text-gold mb-4 block">
               Curated for You
             </span>
             <h2 className="font-serif text-2xl md:text-3xl lg:text-5xl font-medium text-charcoal">
@@ -61,7 +61,7 @@ const TrendingProducts = () => {
         </div>
 
         {/* Desktop: 4-column grid */}
-        <div className="hidden lg:grid grid-cols-4 gap-6 xl:gap-8">
+        <div className="hidden lg:grid grid-cols-4 gap-8 xl:gap-10">
           {trendingProducts.map((product, index) => (
             <ProductCard key={product.id} product={product} index={index} />
           ))}

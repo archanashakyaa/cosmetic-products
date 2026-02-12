@@ -31,11 +31,11 @@ const ProductCard = ({ product, index = 0 }) => {
         )}
 
         {/* Hover Actions */}
-        <div className="absolute bottom-0 left-0 right-0 p-3 flex gap-2 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+        <div className="absolute bottom-0 left-0 right-0 p-4 flex gap-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="flex-1 bg-white-pure/95 backdrop-blur-sm text-charcoal py-2.5 md:py-3 text-xs md:text-sm font-medium tracking-wide hover:bg-charcoal hover:text-white-pure transition-colors flex items-center justify-center gap-2"
+            className="flex-1 bg-white-pure/95 backdrop-blur-sm text-charcoal py-3 md:py-4 px-4 md:px-6 text-xs md:text-sm font-medium tracking-wide hover:bg-charcoal hover:text-white-pure transition-colors flex items-center justify-center gap-2"
           >
             <ShoppingBag size={15} />
             Add to Bag
@@ -43,7 +43,7 @@ const ProductCard = ({ product, index = 0 }) => {
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="w-10 md:w-12 bg-white-pure/95 backdrop-blur-sm text-charcoal flex items-center justify-center hover:text-gold transition-colors"
+            className="w-12 md:w-14 bg-white-pure/95 backdrop-blur-sm text-charcoal flex items-center justify-center hover:text-gold transition-colors py-3 md:py-4"
             aria-label="Add to wishlist"
           >
             <Heart size={16} />
@@ -52,19 +52,19 @@ const ProductCard = ({ product, index = 0 }) => {
       </div>
 
       {/* Product Info */}
-      <div className="mt-3 md:mt-4 flex-1 flex flex-col">
-        <span className="text-[10px] md:text-xs font-medium tracking-[0.15em] uppercase text-charcoal-soft mb-1">
+      <div className="mt-4 md:mt-6 p-4 flex-1 flex flex-col rounded-sm bg-white-pure">
+        <span className="text-[10px] md:text-xs font-medium tracking-[0.15em] uppercase text-charcoal-soft mb-2">
           {product.category}
         </span>
-        <h3 className="font-serif text-base md:text-lg font-medium text-charcoal leading-snug mb-1.5 group-hover:text-gold transition-colors">
+        <h3 className="font-serif text-base md:text-lg font-medium text-charcoal leading-snug mb-2 group-hover:text-gold transition-colors">
           {product.name}
         </h3>
-        <p className="text-xs text-charcoal-soft leading-relaxed mb-2 line-clamp-2 hidden md:block">
+        <p className="text-xs text-charcoal-soft leading-relaxed mb-4 line-clamp-2 hidden md:block">
           {product.description}
         </p>
 
         {/* Rating */}
-        <div className="flex items-center gap-1.5 mb-2">
+        <div className="flex items-center gap-2 mb-4">
           <div className="flex items-center">
             {[...Array(5)].map((_, i) => (
               <Star
@@ -80,7 +80,7 @@ const ProductCard = ({ product, index = 0 }) => {
         </div>
 
         {/* Price */}
-        <div className="mt-auto flex items-center gap-2">
+        <div className="mt-auto flex items-center gap-3">
           <span className="text-base md:text-lg font-semibold text-charcoal">
             ${product.price}
           </span>

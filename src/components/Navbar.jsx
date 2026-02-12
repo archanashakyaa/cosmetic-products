@@ -37,7 +37,7 @@ const Navbar = () => {
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           {/* Mobile/Tablet Header */}
-          <div className="flex lg:hidden items-center justify-between h-16">
+          <div className="flex lg:hidden items-center justify-between h-16 px-4">
             <button
               onClick={() => setIsOpen(true)}
               className="p-2 text-charcoal hover:text-gold transition-colors"
@@ -48,7 +48,7 @@ const Navbar = () => {
             <a href="#" className="font-serif text-xl font-semibold tracking-wider text-charcoal">
               GlowLab
             </a>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-4">
               <button className="p-2 text-charcoal hover:text-gold transition-colors" aria-label="Cart">
                 <ShoppingBag size={22} />
               </button>
@@ -56,14 +56,14 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Header */}
-          <div className="hidden lg:flex items-center justify-between h-20">
+          <div className="hidden lg:flex items-center justify-between h-20 px-8">
             {/* Logo */}
             <a href="#" className="font-serif text-2xl font-semibold tracking-widest text-charcoal hover:text-gold transition-colors">
               GlowLab
             </a>
 
             {/* Center Links */}
-            <div className="flex items-center gap-10">
+            <div className="flex items-center gap-12">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
@@ -77,7 +77,7 @@ const Navbar = () => {
             </div>
 
             {/* Right Icons */}
-            <div className="flex items-center gap-5">
+            <div className="flex items-center gap-6">
               <button className="text-charcoal-light hover:text-gold transition-colors" aria-label="Search">
                 <Search size={20} />
               </button>
@@ -121,7 +121,7 @@ const Navbar = () => {
               className="fixed top-0 left-0 bottom-0 w-[85%] max-w-sm bg-cream z-[60] flex flex-col"
             >
               {/* Drawer Header */}
-              <div className="flex items-center justify-between p-6 border-b border-beige">
+              <div className="flex items-center justify-between p-6 border-b border-beige gap-4">
                 <span className="font-serif text-xl font-semibold tracking-wider">GlowLab</span>
                 <button
                   onClick={() => setIsOpen(false)}
@@ -133,7 +133,7 @@ const Navbar = () => {
               </div>
 
               {/* Navigation Links */}
-              <div className="flex-1 py-8 px-6 overflow-y-auto">
+              <div className="flex-1 py-8 px-6 overflow-y-auto space-y-2">
                 <div className="space-y-1">
                   {navLinks.map((link, index) => (
                     <motion.a
@@ -143,7 +143,7 @@ const Navbar = () => {
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: 0.1 + index * 0.05 }}
                       onClick={() => setIsOpen(false)}
-                      className="block py-4 text-lg font-medium tracking-wide text-charcoal hover:text-gold hover:pl-2 transition-all border-b border-beige/50"
+                      className="block py-4 px-4 text-lg font-medium tracking-wide text-charcoal hover:text-gold hover:pl-6 transition-all border-b border-beige/50"
                     >
                       {link.name}
                     </motion.a>
@@ -151,7 +151,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Mobile Extra Links */}
-                <div className="mt-10 space-y-4">
+                <div className="mt-12 space-y-4">
                   <a href="#" className="flex items-center gap-3 text-charcoal-soft hover:text-charcoal transition-colors">
                     <Search size={18} />
                     <span className="text-sm tracking-wide">Search</span>

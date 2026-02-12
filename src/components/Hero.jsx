@@ -35,14 +35,14 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-charcoal/20 to-transparent md:bg-gradient-to-r md:from-charcoal/50 md:via-charcoal/20 md:to-transparent" />
 
               {/* Content */}
-              <div className="absolute inset-0 flex items-end md:items-center pb-28 md:pb-0">
+              <div className="absolute inset-0 flex items-end md:items-center pb-20 md:pb-0">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                   <div className="max-w-xl">
                     <motion.span
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.6 }}
-                      className="inline-block text-xs md:text-sm font-medium tracking-[0.3em] uppercase text-gold-light mb-4"
+                      className="inline-block text-xs md:text-sm font-medium tracking-[0.3em] uppercase text-gold-light mb-6"
                     >
                       New Collection
                     </motion.span>
@@ -51,7 +51,7 @@ const Hero = () => {
                       initial={{ opacity: 0, y: 30 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.8, delay: 0.1 }}
-                      className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-medium text-white-pure leading-tight mb-4 md:mb-6"
+                      className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-medium text-white-pure leading-tight mb-6 md:mb-8"
                     >
                       {slide.title}
                     </motion.h1>
@@ -60,7 +60,7 @@ const Hero = () => {
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.6, delay: 0.2 }}
-                      className="text-sm md:text-base lg:text-lg text-white-pure/80 leading-relaxed mb-6 md:mb-8 max-w-md"
+                      className="text-sm md:text-base lg:text-lg text-white-pure/80 leading-relaxed mb-8 md:mb-10 max-w-md"
                     >
                       {slide.subtitle}
                     </motion.p>
@@ -70,7 +70,7 @@ const Hero = () => {
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.6, delay: 0.3 }}
-                      className="inline-flex items-center gap-3 bg-white-pure/95 text-charcoal px-6 py-3 md:px-8 md:py-4 text-sm md:text-base font-medium tracking-wide hover:bg-gold hover:text-white-pure transition-all duration-400 group"
+                      className="inline-flex items-center gap-3 bg-white-pure/95 text-charcoal px-8 py-4 md:px-10 md:py-5 text-sm md:text-base font-medium tracking-wide hover:bg-gold hover:text-white-pure transition-all duration-400 group"
                     >
                       {slide.cta}
                       <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />

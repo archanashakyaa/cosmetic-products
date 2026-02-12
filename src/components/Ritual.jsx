@@ -10,7 +10,7 @@ const iconMap = {
 
 const Ritual = () => {
   return (
-    <section id="ritual" className="py-16 md:py-24 lg:py-32 bg-cream">
+    <section id="ritual" className="py-20 md:py-32 lg:py-40 bg-cream">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div
@@ -18,12 +18,12 @@ const Ritual = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-12 md:mb-16 lg:mb-20"
+          className="text-center mb-12 md:mb-20 lg:mb-24"
         >
-          <span className="text-xs md:text-sm font-medium tracking-[0.3em] uppercase text-gold mb-3 block">
+          <span className="text-xs md:text-sm font-medium tracking-[0.3em] uppercase text-gold mb-4 block">
             Your Journey
           </span>
-          <h2 className="font-serif text-2xl md:text-3xl lg:text-5xl font-medium text-charcoal mb-4 md:mb-6">
+          <h2 className="font-serif text-2xl md:text-3xl lg:text-5xl font-medium text-charcoal mb-6 md:mb-8">
             The Ritual
           </h2>
           <p className="text-sm md:text-base text-charcoal-soft max-w-lg mx-auto leading-relaxed">
@@ -32,7 +32,7 @@ const Ritual = () => {
         </motion.div>
 
         {/* Steps Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 lg:gap-12">
           {ritualSteps.map((step, index) => {
             const IconComponent = iconMap[step.icon];
             return (
@@ -53,7 +53,7 @@ const Ritual = () => {
                   <div className="absolute inset-0 bg-charcoal/10 group-hover:bg-charcoal/0 transition-colors duration-500" />
                 </div>
 
-                <div className="flex items-start gap-4">
+                <div className="flex items-start gap-6">
                   <div className="flex-shrink-0 w-12 h-12 bg-beige/60 rounded-full flex items-center justify-center group-hover:bg-gold/20 transition-colors duration-300">
                     <IconComponent size={22} className="text-gold" />
                   </div>
@@ -61,7 +61,7 @@ const Ritual = () => {
                     <span className="text-xs font-medium tracking-[0.2em] text-gold uppercase">
                       Step {step.step}
                     </span>
-                    <h3 className="font-serif text-xl md:text-2xl font-medium text-charcoal mt-1 mb-2">
+                    <h3 className="font-serif text-xl md:text-2xl font-medium text-charcoal mt-2 mb-4">
                       {step.title}
                     </h3>
                     <p className="text-sm text-charcoal-soft leading-relaxed">
