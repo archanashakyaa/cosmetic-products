@@ -7,7 +7,7 @@ const Collections = () => {
   const collectionProducts = products.slice(4, 8);
 
   return (
-    <section id="collections" className="py-20 md:py-32 lg:py-40 pb-12 md:pb-20 lg:pb-32 bg-cream-dark">
+    <section id="collections" className="py-12 md:py-16 lg:py-20 pb-10 md:pb-14 lg:pb-16 bg-cream-dark">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <motion.div

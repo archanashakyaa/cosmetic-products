@@ -10,7 +10,7 @@ const iconMap = {
 
 const Ritual = () => {
   return (
-    <section id="ritual" className="py-20 md:py-32 lg:py-40 bg-cream">
+    <section id="ritual" className="py-12 md:py-16 lg:py-20 bg-cream">
       <div className="container mx-auto px-6 mt-6">
         {/* Section Header */}
         <motion.div

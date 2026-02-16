@@ -65,8 +65,8 @@
   /* Layout */
   --container-max: clamp(64rem, 88vw, 80rem);
   --container-padding: clamp(0.75rem, 3vw, 1.5rem);
-  --section-padding: clamp(1.5rem, 3vw, 2.5rem);
-  --section-padding-tight: clamp(1.25rem, 2.5vw, 2rem);
+  --section-padding: clamp(1.25rem, 2.5vw, 2rem);
+  --section-padding-tight: clamp(1rem, 2vw, 1.5rem);
   --grid-gap: clamp(0.875rem, 1.5vw, 1.5rem);
 
   /* Shadows & radius */
@@ -448,7 +448,7 @@ p, ul, ol, dl, blockquote {
 
 @media (min-width: 48rem) {
   .section {
-    padding-block: clamp(2.5rem, 4vw, 4.5rem);
+    padding-block: clamp(2rem, 3vw, 3.5rem);
   }
 
   .grid--featured {

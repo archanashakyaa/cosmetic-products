@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 
 const Newsletter = () => {
   return (
-    <section className="py-16 md:py-24 lg:py-28 px-6 relative overflow-hidden bg-cream">
+    <section className="py-12 md:py-16 lg:py-20 px-6 relative overflow-hidden bg-cream">
       {/* Subtle gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-cream via-white-pure/30 to-cream -z-10" />
       

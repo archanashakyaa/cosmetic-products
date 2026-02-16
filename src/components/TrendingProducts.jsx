@@ -11,7 +11,7 @@ const TrendingProducts = () => {
   const trendingProducts = products.slice(0, 4);
 
   return (
-    <section id="shop" className="py-20 md:py-32 lg:py-40 bg-white-pure">
+    <section id="shop" className="py-12 md:py-16 lg:py-20 bg-white-pure">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <motion.div

@@ -7,7 +7,7 @@ const Stories = () => {
   const others = blogPosts.filter(p => !p.featured);
 
   return (
-    <section id="stories" className="py-20 md:py-32 lg:py-40 bg-cream">
+    <section id="stories" className="py-12 md:py-16 lg:py-20 bg-cream">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <motion.div
@@ -46,7 +46,7 @@ const Stories = () => {
                   className="w-full h-52 object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal/50 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
+                <div className="absolute bottom-0 left-0 right-0 p-3 md:p-4">
                   <span className="text-[10px] font-medium tracking-[0.2em] uppercase text-gold-light">
                     {post.category}
                   </span>
@@ -76,7 +76,7 @@ const Stories = () => {
                 className="w-full h-72 md:h-80 lg:h-full min-h-[400px] object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-charcoal/70 via-charcoal/20 to-transparent" />
-              <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
+              <div className="absolute bottom-0 left-0 right-0 p-3 md:p-4">
                 <span className="text-xs font-medium tracking-[0.2em] uppercase text-gold-light mb-2 block">
                   {featured.category} — {featured.date}
                 </span>
