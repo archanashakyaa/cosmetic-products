@@ -394,6 +394,42 @@ p, ul, ol, dl, blockquote {
 }
 
 /* ============================================================================
+   EDITORIAL PRODUCT CARD — "The Editorial Vessel"
+   Clinical-meets-luxury aesthetic with maximum negative space,
+   hair-line dividers, and serif-forward typographic hierarchy.
+   ============================================================================ */
+
+.editorial-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E1DA;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+  transition:
+    transform 420ms cubic-bezier(0.25, 0.1, 0.25, 1),
+    box-shadow 420ms cubic-bezier(0.25, 0.1, 0.25, 1),
+    border-color 300ms ease;
+  overflow: hidden;
+  will-change: transform;
+}
+
+/* The "Gentle Lift" — hover elevation */
+.editorial-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04);
+  border-color: #D5D0C8;
+}
+
+/* Divider darkening on card hover */
+.editorial-card:hover .editorial-divider {
+  background-color: #D5D0C8;
+}
+
+/* Info container inherits the white surface */
+.editorial-card .editorial-info {
+  background-color: #FFFFFF;
+}
+
+/* ============================================================================
    ACCESSIBILITY & MOTION
    ============================================================================ */
 
