@@ -11,7 +11,7 @@ const iconMap = {
 const Ritual = () => {
   return (
     <section id="ritual" className="py-20 md:py-32 lg:py-40 bg-cream">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-6 mt-6">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -20,13 +20,13 @@ const Ritual = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-12 md:mb-20 lg:mb-24"
         >
-          <span className="text-xs md:text-sm font-medium tracking-[0.3em] uppercase text-gold mb-4 block">
+          <span className="pt-4 text-xs md:text-sm font-medium tracking-[0.3em] uppercase text-gold mb-4 block">
             Your Journey
           </span>
-          <h2 className="font-serif text-2xl md:text-3xl lg:text-5xl font-medium text-charcoal mb-6 md:mb-8">
+          <h2 className="font-serif text-3xl md:text-3xl lg:text-5xl font-medium text-charcoal mb-6 md:mb-8">
             The Ritual
           </h2>
-          <p className="text-sm md:text-base text-charcoal-soft max-w-lg mx-auto leading-relaxed">
+          <p className="body-sm md:text-muted max-w-2xl mx-auto">
             Three simple steps to unlock your skin's natural luminosity. A daily practice in self-care.
           </p>
         </motion.div>
@@ -64,7 +64,7 @@ const Ritual = () => {
                     <h3 className="font-serif text-xl md:text-2xl font-medium text-charcoal mt-2 mb-4">
                       {step.title}
                     </h3>
-                    <p className="text-sm text-charcoal-soft leading-relaxed">
+                    <p className="body-sm text-charcoal-soft leading-relaxed">
                       {step.description}
                     </p>
                   </div>

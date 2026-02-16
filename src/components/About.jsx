@@ -21,7 +21,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 md:py-32 lg:py-40 bg-white-pure">
+    <section id="about" className="pt-12 md:pt-20 lg:pt-32 py-20 md:py-32 lg:py-40 bg-white-pure">
       <div className="container mx-auto px-6">
         {/* Two-column layout */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
@@ -53,7 +53,7 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.1 }}
           >
-            <span className="text-xs md:text-sm font-medium tracking-[0.3em] uppercase text-gold mb-4 block">
+            <span className="text-xs md:text-sm font-medium tracking-[0.3em] uppercase text-gold mb-4 block mt-6 md:mt-8 lg:mt-10">
               Our Philosophy
             </span>
             <h2 className="font-serif text-2xl md:text-3xl lg:text-4xl font-medium text-charcoal mb-6 md:mb-8 leading-tight">
@@ -94,7 +94,7 @@ const About = () => {
 
             <a
               href="#"
-              className="inline-flex items-center gap-4 bg-charcoal text-white-pure px-8 py-4 md:px-10 md:py-4 text-sm font-medium tracking-wide hover:bg-gold transition-colors duration-300 group"
+              className="inline-flex items-center gap-4 bg-beige text-charcoal px-8 py-4 md:px-10 md:py-4 text-sm font-medium tracking-wide hover:bg-gold hover:text-white-pure transition-colors duration-300 group"
             >
               Learn Our Story
               <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
